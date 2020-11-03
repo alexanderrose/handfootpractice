@@ -16,7 +16,6 @@ body{background-color:black;color:white;font-family:"Futura";font-size:3rem;
     input:active{background-color:black;color:white;border:3px white solid;}
     div{display:inline;}
     h4{display:inline;font-size:2em;}
-    h4:hover{color:#FFC9BD;cursor:pointer;}
     p{display:inline;margin:10px;font-wight:200;}
     #knopf{font-size:1em;}
     h1{font-weight:100;margin-bottom:100px;}
@@ -27,18 +26,18 @@ body{background-color:black;color:white;font-family:"Futura";font-size:3rem;
 
 <h1>Hand-Fuß-Übungen</h1>
 
-<div>
+<div id="div">
 
 <p>HH:</p>
-  <h4 id="box1" onclick="hihat()">error1</h4><br>
+  <h4 id="box1" onclick="f(1)">error1</h4><br>
 
 
 <p>BD:</p>
-<h4 id="box2" onclick="bassdrum()">error2</h4><br>
+<h4 id="box2" onclick="f(2)">error2</h4><br>
 
 
 <p>SN:</p>
-<h4 id="box3" onclick="snaredrum()">error3</h4><br><br>
+<h4 id="box3" onclick="f(3)">error3</h4><br><br>
 
 </div>
 
@@ -49,65 +48,85 @@ body{background-color:black;color:white;font-family:"Futura";font-size:3rem;
 
 <script>
 
+  //FARBE
+function f(x){
+  var box=document.getElementById("box"+x);
+
+  if(box.style.color!="red"){
+    box.style.color="red";
+  }
+  else{
+    box.style.color="white";
+  }
+}
 
   //HIHAT
   hihat();
   function hihat(){
-  var xHH=Math.round(Math.random()*2);
-  var HH=["4tel","Offbeat","8tel"];
-  document.getElementById("box1").innerHTML=HH[xHH];
+
+    if(document.getElementById("box1").style.color!="red"){
+      var xHH=Math.round(Math.random()*2);
+      var HH=["4tel","Offbeat","8tel"];
+      document.getElementById("box1").innerHTML=HH[xHH];
+    }
   }
 
   //BASSDRUM
   bassdrum();
   function bassdrum(){
-  var xBD=Math.round(Math.random()*12);
-  var BD=[
-    "4tel",
-    "Offbeat",
-    "Bajao",
-    "Tumbao",
-    "Samba",
-    "2:3 Son",
-    "3:2 Son",
-    "2:3 Rumba",
-    "3:2 Rumba",
-    "3er",
-    "5er",
-    "7er",
-    "Second Line"
-    ];
-    document.getElementById("box2").innerHTML=BD[xBD];
+
+    if(document.getElementById("box2").style.color!="red"){
+      var xBD=Math.round(Math.random()*12);
+      var BD=[
+        "4tel",
+        "Offbeat",
+        "Bajao",
+        "Tumbao",
+        "Samba",
+        "2:3 Son",
+        "3:2 Son",
+        "2:3 Rumba",
+        "3:2 Rumba",
+        "3er",
+        "5er",
+        "7er",
+        "Second Line"
+        ];
+      document.getElementById("box2").innerHTML=BD[xBD];
+    }
   }
 
   //SNAREDRUM
   snaredrum();
   function snaredrum(){
-  var xSN=Math.round(Math.random()*20);
-  var SN=[
-    "4tel",
-    "Offbeat",
-    "Bajao",
-    "Tumbao",
-    "Samba",
-    "2:3 Son",
-    "3:2 Son",
-    "2:3 Rumba",
-    "3:2 Rumba",
-    "3er",
-    "5er",
-    "7er",
-    "Cascara",
-    "Double Cascara",
-    "Paradiddle 1",
-    "Paradiddle 2",
-    "Paradiddle 3",
-    "Paradiddle 4",
-    "Six Stroke Roll",
-    "Mosambique",
-    "Songo"
-    ];
-    document.getElementById("box3").innerHTML=SN[xSN];
+
+    if(document.getElementById("box3").style.color!="red"){
+      var xSN=Math.round(Math.random()*20);
+      var SN=[
+        "4tel",
+        "Offbeat",
+        "Bajao",
+        "Tumbao",
+        "Samba",
+        "2:3 Son",
+        "3:2 Son",
+        "2:3 Rumba",
+        "3:2 Rumba",
+        "3er",
+        "5er",
+        "7er",
+        "Cascara",
+        "Double Cascara",
+        "Paradiddle 1",
+        "Paradiddle 2",
+        "Paradiddle 3",
+        "Paradiddle 4",
+        "Six Stroke Roll",
+        "Mosambique",
+        "Songo"
+        ];
+        document.getElementById("box3").innerHTML=SN[xSN];
+    }
   }
 
 function reload(){
