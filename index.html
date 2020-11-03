@@ -4,12 +4,13 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title>Hand-Foot-Practice</title>
 <style>
-body{background-color:black;color:white;font-family:"Futura";font-size:3rem;}
+body{background-color:black;color:white;font-family:"Futura";font-size:3rem;user-select:none;}
 
     input{font-size:0.8em;background-color:white;color:black;border-radius:20em;padding:20px;}
     input:active{background-color:black;color:white;border:3px white solid;}
     div{display:inline;}
     h4{display:inline;font-size:2em;}
+    h4:hover{color:#FFC9BD;cursor:pointer;}
     p{display:inline;margin:10px;font-wight:200;}
     #knopf{font-size:1em;}
     h1{font-weight:100;margin-bottom:100px;}
@@ -23,22 +24,19 @@ body{background-color:black;color:white;font-family:"Futura";font-size:3rem;}
 <div>
 
 <p>HH:</p>
-  <h4 id="box1">error1</h4>
-  <input type="button" value="Neu" id="in" onclick="hihat()"/></br>
+  <h4 id="box1" onclick="hihat()">error1</h4><br>
 
 
 <p>BD:</p>
-<h4 id="box2">error2</h4>
-<input type="button" value="Neu" id="in" onclick="bassdrum()"/></br>
+<h4 id="box2" onclick="bassdrum()">error2</h4><br>
 
 
 <p>SN:</p>
-<h4 id="box3">error3</h4>
-<input type="button" value="Neu" id="in" onclick="snaredrum()"/></br></br>
+<h4 id="box3" onclick="snaredrum()">error3</h4><br><br>
 
 </div>
 
-<input type="button" value="Alles Neu" onclick="reload()" id="knopf"/>
+<input type="button" value="Neu" onclick="reload()" id="knopf"/>
 
 
 
