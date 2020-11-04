@@ -5,13 +5,8 @@
 <title>Hand-Foot-Practice</title>
 <style>
 body{background-color:black;color:white;font-family:"Futura";font-size:3rem;
-    user-select: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
+    user-select:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;
     }
-
     input{font-size:0.8em;background-color:white;color:black;border-radius:20em;padding:20px;}
     input:active{background-color:black;color:white;border:3px white solid;}
     div{display:inline;}
@@ -47,7 +42,7 @@ body{background-color:black;color:white;font-family:"Futura";font-size:3rem;
 
 
 <script>
-
+    
   //FARBE
 function f(x){
   var box=document.getElementById("box"+x);
@@ -59,25 +54,25 @@ function f(x){
     box.style.color="white";
   }
 }
-
+    
   //HIHAT
-  hihat();
   function hihat(){
+    var box1=document.getElementById("box1");
 
-    if(document.getElementById("box1").style.color!="red"){
-      var xHH=Math.round(Math.random()*2);
-      var HH=["4tel","Offbeat","8tel"];
-      document.getElementById("box1").innerHTML=HH[xHH];
+    if(box1.style.color!="red"){
+      var hh=["4tel","Offbeat","8tel"];
+      var xhh=Math.round(Math.random()*(hh.length-1));
+
+      box1.innerHTML=hh[xhh];
     }
   }
 
   //BASSDRUM
-  bassdrum();
   function bassdrum(){
+    var box2=document.getElementById("box2");
 
-    if(document.getElementById("box2").style.color!="red"){
-      var xBD=Math.round(Math.random()*12);
-      var BD=[
+    if(box2.style.color!="red"){
+      var bd=[
         "4tel",
         "Offbeat",
         "Bajao",
@@ -92,17 +87,18 @@ function f(x){
         "7er",
         "Second Line"
         ];
-      document.getElementById("box2").innerHTML=BD[xBD];
+      var xbd=Math.round(Math.random()*(bd.length-1));
+
+      box2.innerHTML=bd[xbd];
     }
   }
 
   //SNAREDRUM
-  snaredrum();
   function snaredrum(){
+    var box3=document.getElementById("box3");
 
-    if(document.getElementById("box3").style.color!="red"){
-      var xSN=Math.round(Math.random()*20);
-      var SN=[
+    if(box3.style.color!="red"){
+      var sn=[
         "4tel",
         "Offbeat",
         "Bajao",
@@ -125,10 +121,13 @@ function f(x){
         "Mosambique",
         "Songo"
         ];
-        document.getElementById("box3").innerHTML=SN[xSN];
+      var xsn=Math.round(Math.random()*(sn.length-1));
+
+      box3.innerHTML=sn[xsn];
     }
   }
 
+reload();
 function reload(){
   hihat();
   bassdrum();
