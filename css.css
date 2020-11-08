@@ -1,0 +1,52 @@
+body{
+  background-color:black;
+  color:white;
+  font-family:"Futura";
+  font-size:3rem;
+  cursor:default;
+  white-space: nowrap;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+h1{
+  font-weight:50;
+  margin-bottom:75px;
+  font-size:50px;
+  }
+h4{display:inline;
+  font-size:2em;
+  cursor:pointer;
+}
+p{
+  display:inline;
+  margin:10px;
+}
+div{
+  display:block;
+}
+
+#rideknopf{
+  color:#484848;
+  border:5px solid #484848;
+  transition:1s;
+}
+#reload{
+  border:5px solid white;
+}
+#reload:active{
+  background-color:white;
+  color:black;
+  transition:0s;
+}
+.knopf{
+  padding:8px;
+  display:inline-block;
+  margin-top:1em;
+  cursor:pointer;
+  font-size:1.5em;
+  transition:0.5s;
+}
