@@ -33,9 +33,6 @@ div{
   color:grey;
   border:5px solid grey;
 }
-#reload:active{
-  background-color:red;
-}
 #reload{
   border:5px solid white;
 }
