@@ -32,7 +32,7 @@ div{
 #rideknopf{
   color:#484848;
   border:5px solid #484848;
-  transition:1s;
+  transition:0.6s;
 }
 #reload{
   border:5px solid white;
