@@ -45,4 +45,9 @@ div{
   margin-top:1em;
   cursor:pointer;
   font-size:1.5em;
+  transition: all 0.5s;
+}
+.knopf:active{
+  background-color:white;
+  transition:0s;
 }
