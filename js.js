@@ -1,3 +1,4 @@
+var version=1.0;
 
   //FARBE
 function f(x){
