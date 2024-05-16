@@ -2,7 +2,7 @@ body{
   background-color:black;
   color:white;
   font-family:"Futura";
-  font-size:3rem;
+  font-size:2.8rem;
   cursor:default;
 
   -webkit-user-select: none;
@@ -13,7 +13,9 @@ body{
 
 h1{
     margin-bottom:-0.6em;
+    margin-top:0em;
     white-space:nowrap;
+    font-size:1.7em;
 }
 
 h4{display:inline;
@@ -27,6 +29,7 @@ h5{
     font-size:0.6em;
     margin-left:8em;
     white-space:nowrap;
+    margin-bottom:3em;
 }
 
 p{
@@ -53,7 +56,7 @@ div{
 .knopf{
   padding:8px;
   display:inline-block;
-  margin-top:1em;
+  margin-top:1.3em;
   cursor:pointer;
   font-size:1.5em;
   transition:0.5s;
