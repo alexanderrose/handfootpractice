@@ -135,13 +135,17 @@ function ridehide(){
 
     if(box4.style.color!="red"){
       var rd=[
-        "4tel",
-        "8tel",
+        "Quarter",
+        "8th",
+        "16th",
         "Offbeat",
         "♪♬♪♬",
         "♬♪♬♪",
         "Baião",
         "Tumbao",
+        "Second sixteenth",
+        "Last sixteenth"
+
       ];
       var xrd=Math.round(Math.random()*(rd.length-1));
 
