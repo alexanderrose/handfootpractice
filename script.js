@@ -17,7 +17,11 @@ function f(x){
     var box1=document.getElementById("box1");
 
     if(box1.style.color!="red"){
-      var hh=["4tel","Offbeat","8tel"];
+      var hh=[
+        "Quarter",
+        "Offbeat",
+        "8ths",
+        ];
       var xhh=Math.round(Math.random()*(hh.length-1));
 
       box1.innerHTML=hh[xhh];
