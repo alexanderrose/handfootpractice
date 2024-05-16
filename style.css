@@ -12,17 +12,26 @@ body{
   }
 
 h1{
-  font-weight:50;
-  margin-bottom:75px;
-  font-size:50px;
-  }
+    margin-bottom:-0.6em;
+    white-space:nowrap;
+}
+
 h4{display:inline;
   font-size:2em;
   cursor:pointer;
 }
+h5{
+    color:grey;
+    font-size:1em;
+    font-weight:100;
+    font-size:0.6em;
+    margin-left:8em;
+    white-space:nowrap;
+}
+
 p{
-  display:inline;
-  margin:10px;
+    display:inline;
+    margin:10px;
 }
 div{
   display:block;
@@ -48,4 +57,10 @@ div{
   cursor:pointer;
   font-size:1.5em;
   transition:0.5s;
+}
+
+#credits{
+    text-align:center;
+    font-size:0.4em;
+    margin:5em;
 }
