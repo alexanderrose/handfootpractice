@@ -30,7 +30,7 @@ function f(x){
 
     if(box2.style.color!="red"){
       var bd=[
-        "4tel",
+        "Quarter",
         "Offbeat",
         "Baião",
         "Tumbao",
@@ -39,10 +39,12 @@ function f(x){
         "3:2 Son",
         "2:3 Rumba",
         "3:2 Rumba",
-        "3er",
-        "5er",
-        "7er",
-        "Second Line"
+        "Groups of 3",
+        "Groups of 5",
+        "Groups of 7",
+        "Second Line",
+        "Second sixteenth",
+        "Last sixteenth"
         ];
       var xbd=Math.round(Math.random()*(bd.length-1));
 
@@ -62,35 +64,23 @@ var snc=1; //snaredrum-choose
       //VARIANTE OHNE RIDE
       if(snc==1){ //snaredrum-choose
         sn=[
-          "4tel",
-          "Offbeat",
-          "Baião",
-          "Tumbao",
-          "Samba",
-          "2:3 Son",
-          "3:2 Son",
-          "2:3 Rumba",
-          "3:2 Rumba",
-          "3er",
-          "5er",
-          "7er",
-          "Cascara",
           "Double Cascara",
-          "Paradiddle 1",
-          "Paradiddle 2",
-          "Paradiddle 3",
-          "Paradiddle 4",
+          "Paradiddles",
           "Six Stroke Roll",
+          "Swiss Triplet",
           "Mosambique",
           "Songo",
           "Shaker + Backbeat",
-          "Double Stroke Roll"
+          "Double Stroke Roll",
+          "2:3 Polyrhythm",
+          "3:4 Polyrhythm",
+          "Single Stroke Roll"
           ];
       }
       //VARIANTE MIT RIDE
       else{
           sn=[
-          "4tel",
+          "Quarter",
           "Offbeat",
           "Baião",
           "Tumbao",
@@ -99,11 +89,14 @@ var snc=1; //snaredrum-choose
           "3:2 Son",
           "2:3 Rumba",
           "3:2 Rumba",
-          "3er",
-          "5er",
-          "7er",
+        "Groups of 3",
+        "Groups of 5",
+        "Groups of 7",
           "Cascara",
           "Backbeat",
+          "Second sixteenth",
+          "Last sixteenth",
+          "One handed roll"
           ];
       }
 
